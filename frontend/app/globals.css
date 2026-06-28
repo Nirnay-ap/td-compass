@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f7f9;
+  --foreground: #0f172a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, Arial, sans-serif;
+}
+
+/* Markdown styling inside chat bubbles */
+.md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+}
+.md th,
+.md td {
+  border: 1px solid #e2e8f0;
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+}
+.md th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+.md h1,
+.md h2,
+.md h3 {
+  font-weight: 600;
+  margin: 0.5rem 0 0.25rem;
+}
+.md p {
+  margin: 0.4rem 0;
+}
+.md ul,
+.md ol {
+  margin: 0.4rem 0;
+  padding-left: 1.25rem;
+  list-style: revert;
+}
+.md code {
+  background: #f1f5f9;
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+.md a {
+  color: #2563eb;
+  text-decoration: underline;
+}
